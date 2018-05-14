@@ -1,9 +1,12 @@
 #include <iostream>
 
 class beeing{
-  beeing();
-  ~beeing();
- private:
-  char code[255];
-  void populateRandom();  
+public:
+    beeing();
+    ~beeing();
+    std::string getCode();
+private:
+    std::string code;
+    int size;
+    void populateRandom();
 };

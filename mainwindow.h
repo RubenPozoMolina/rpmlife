@@ -21,6 +21,8 @@ public:
 private slots:
     void on_actionRun_triggered();
 
+    void on_actionAdd_living_beeing_triggered();
+
 private:
     Ui::MainWindow *ui;
     environment *env;
