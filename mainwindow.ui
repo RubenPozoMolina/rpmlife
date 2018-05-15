@@ -41,6 +41,7 @@
     </property>
     <addaction name="actionRun"/>
     <addaction name="actionAdd_living_beeing"/>
+    <addaction name="actionAdd_beeings"/>
    </widget>
    <widget class="QMenu" name="menuConfig">
     <property name="title">
@@ -84,6 +85,11 @@
   <action name="actionAdd_living_beeing">
    <property name="text">
     <string>Add living beeing</string>
+   </property>
+  </action>
+  <action name="actionAdd_beeings">
+   <property name="text">
+    <string>Add beeings...</string>
    </property>
   </action>
  </widget>

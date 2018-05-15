@@ -1,5 +1,8 @@
+#include <QDialog>
+#include <QInputDialog>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -44,5 +47,24 @@ void MainWindow::on_actionAdd_living_beeing_triggered()
         log("Error adding living beeing");
     }
 }
+
+
+
+void MainWindow::on_actionAdd_beeings_triggered()
+{
+    bool ok;
+    int numberBeeings = QInputDialog::getInt(this,tr("Input dialog"),tr("Number of beeings to add"),1,1,10000,1,&ok);
+    if (ok){
+        for(int i=0;i<numberBeeings;i++){
+            env->addBeeing();
+        }
+    }
+}
+
+
+
+
+
+
 
 
