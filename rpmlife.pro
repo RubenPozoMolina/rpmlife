@@ -40,4 +40,4 @@ INCLUDEPATH +=  librpmlife/include
 
 FORMS += \
         mainwindow.ui
-IN
+
