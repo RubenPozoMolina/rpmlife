@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     env = new environment();
     ui->setupUi(this);
-    QMainWindow::showMaximized();
 }
 
 MainWindow::~MainWindow()
