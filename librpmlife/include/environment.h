@@ -2,6 +2,10 @@
 #include <vector>
 #include "beeing.h"
 
+#ifndef ENVIRONMENT_H
+#define ENVIRONMENT_H
+
+
 class environment {
 public:
     environment();
@@ -12,3 +16,5 @@ public:
 private:
 
 };
+
+#endif // ENVIRONMENT_H

@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     librpmlife/src/beeing.cpp \
-    librpmlife/src/environment.cpp
+    librpmlife/src/environment.cpp \
+    librpmlife/src/position.cpp
 
 HEADERS += \
         mainwindow.h \
     librpmlife/include/beeing.h \
-    librpmlife/include/environment.h
+    librpmlife/include/environment.h \
+    librpmlife/include/position.h
 
 INCLUDEPATH +=  librpmlife/include
 

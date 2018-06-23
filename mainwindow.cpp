@@ -31,6 +31,9 @@ void MainWindow::on_actionRun_triggered()
     for (std::vector<beeing *>::iterator it = env->beeingVector.begin(); it != env->beeingVector.end(); ++it){
         log(QString::asprintf("%i",counter));
         b = *it;
+        position *p;
+        p = b->getPosition();
+        log(QString::asprintf("Position: %i %i %i",p->X(),p->Y(),p->Z()));
         log(QString::fromStdString(b->getCode()));
         counter++;
     }
