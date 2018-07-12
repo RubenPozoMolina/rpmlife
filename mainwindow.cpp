@@ -1,5 +1,9 @@
 #include <QDialog>
 #include <QInputDialog>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QGraphicsItem>
+#include <QPaintEngine>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -50,8 +54,6 @@ void MainWindow::on_actionAdd_living_beeing_triggered()
     }
 }
 
-
-
 void MainWindow::on_actionAdd_beeings_triggered()
 {
     bool ok;
@@ -64,9 +66,11 @@ void MainWindow::on_actionAdd_beeings_triggered()
 }
 
 
-
-
-
-
-
-
+void MainWindow::on_actionTest_UI_triggered()
+{
+    QGraphicsView *gv = ui->gvEnvironment;
+    QGraphicsScene *scene = new QGraphicsScene(0,0,200,200);
+    QPen pen(Qt::green, 3, Qt::DashDotLine, Qt::RoundCap, Qt::RoundJoin);
+    gv->setScene(scene);
+    scene->addLine(1,1,5,5,pen);
+}

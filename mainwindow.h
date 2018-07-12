@@ -25,6 +25,8 @@ private slots:
 
     void on_actionAdd_beeings_triggered();
 
+    void on_actionTest_UI_triggered();
+
 private:
     Ui::MainWindow *ui;
     environment *env;
